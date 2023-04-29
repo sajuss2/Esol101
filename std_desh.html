@@ -45,6 +45,30 @@ nav a:hover {
   margin: 0;
   padding: 0;
 }
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 0.5rem;
+}
+
+.search-form button[type="submit"] {
+  background-color: #0074d9;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.search-form button[type="submit"]:hover {
+  background-color: #0055a5;
+}
 
 header {
   background-color: #0074d9;
@@ -115,8 +139,11 @@ header h1 {
         <li><a href="#">Feedback</a></li>
         <li><a href="#">Tutor</a></li>
         <li><a href="#">My Profile</a></li>
-        <li><a href="#">Logout</a></li>
       </ul>
+      <form class="search-form">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Go</button>
+      </form>
     </nav>
     <main>
       <div class="cards">
