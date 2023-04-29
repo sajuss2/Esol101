@@ -6,6 +6,40 @@
     <title>Learning Platform Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <style>
+
+nav {
+  background-color: #0074d9;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #0074d9;
+}
+
         body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -66,13 +100,24 @@ header h1 {
   color: #0074d9;
   text-decoration: none
 
+
     </style>
   </head>
   <body>
     <header>
-      <h1>Esol101</h1>
+      <h1>Esol101.com</h1>
       <a href="#" class="logout">Logout</a>
     </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Tutor</a></li>
+        <li><a href="#">My Profile</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
     <main>
       <div class="cards">
         <div class="card">
@@ -109,7 +154,7 @@ header h1 {
           <span class="progress-percentage">75%</span>
         </div>
         <div class="progress-bar">
-          <span class="progress-label">JavaScript</span>
+          <span class="progress-label"></span>
           <progress value="50" max="100"></progress>
           <span class="progress-percentage">50%</span>
         </div>
