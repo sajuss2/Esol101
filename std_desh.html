@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Platform Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0074d9;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.logout {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  flex-basis: calc(33.33% - 1rem);
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.view-details {
+  color: #0074d9;
+  text-decoration: none
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Learning Platform Dashboard</h1>
+      <a href="#" class="logout">Logout</a>
+    </header>
+    <main>
+      <div class="cards">
+        <div class="card">
+          <h2>Enrolled Courses</h2>
+          <p class="count">6</p>
+          <a href="#" class="view-details">View Details</a>
+        </div>
+        <div class="card">
+          <h2>Completed Courses</h2>
+          <p class="count">2</p>
+          <a href="#" class="view-details">View Details</a>
+        </div>
+        <div class="card">
+          <h2>Certificates Earned</h2>
+          <p class="count">1</p>
+          <a href="#" class="view-details">View Details</a>
+        </div>
+      </div>
+      <div class="progress">
+        <h2>Progress Tracking</h2>
+        <div class="progress-bar">
+          <span class="progress-label">HTML/CSS</span>
+          <progress value="75" max="100"></progress>
+          <span class="progress-percentage">75%</span>
+        </div>
+        <div class="progress-bar">
+          <span class="progress-label">JavaScript</span>
+          <progress value="50" max="100"></progress>
+          <span class="progress-percentage">50%</span>
+        </div>
+        <div class="progress-bar">
+          <span class="progress-label">Python</span>
+          <progress value="25" max="100"></progress>
+          <span class="progress-percentage">25%</span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
